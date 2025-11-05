@@ -2,7 +2,7 @@
 
 // ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 // ！！！！！！ 您的 Google Apps Script 网址 ！！！！！！
-const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx6r_8HIk6GUhSGlWB_Mx6m0232emPKHvbZM5G14TDut4NBSRYG4sIjJ3bcbKUeRPd8/exec";
+const GAS_WEB_APP_URL = "https://script.google.com/macros/s/你自己的web程序地址/exec";
 // ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 // ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 
@@ -45,4 +45,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     // 关键：返回 true 告诉 Chrome 我们将异步地调用 sendResponse
     return true;
   }
+
 });
