@@ -1,0 +1,32 @@
+/* style.css */
+
+.save-to-drive-btn {
+  /* 模仿推特按钮的基本样式 */
+  background-color: transparent;
+  border: 1px solid #00aaff; /* 醒目的蓝色 */
+  color: #00aaff;
+  padding: 6px 12px;
+  border-radius: 999px; /* 圆角 */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px; /* 和其他按钮保持一点距离 */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* 鼠标悬停效果 */
+.save-to-drive-btn:hover {
+  background-color: rgba(0, 170, 255, 0.1); /* 淡淡的蓝色背景 */
+}
+
+/* 禁用状态 (保存中/已保存/失败) */
+.save-to-drive-btn:disabled {
+  color: #888;
+  border-color: #888;
+  background-color: transparent;
+  cursor: default;
+}
+
+.save-to-drive-btn:disabled:hover {
+  background-color: transparent; /* 禁用时悬停无效果 */
+}

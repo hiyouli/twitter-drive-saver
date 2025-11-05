@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "推特保存助手 (v0.1)",
+  "version": "0.1",
+  "description": "一键保存推文到 Google Drive",
+  "permissions": [],
+  "host_permissions": [
+    "https://script.google.com/macros/s/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "推特保存助手"
+  }
+}
